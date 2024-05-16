@@ -41,6 +41,7 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=olajutoyin&layout=compact)
 
 
+
 ## 🌐 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/toyin-verity-egho-b9a143b)
 - [Email](mailto:olajutoyin@gmail.com)
