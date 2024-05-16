@@ -29,7 +29,14 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 - **Spatial Transcriptomics and Machine Learning Analysis**: Analyzed cellular interactions within breast cancer tissues using deep learning and clustering algorithms.
 - **Interactive Supply Chain Visualization Tool**: Developed a tool to enhance decision-making by analyzing supply chain data.
 - **Heart Disease Prediction**: Utilized machine learning models to predict heart disease, achieving high accuracy with Random Forest and SVM models.
-
+- **Analysis of Subscription Channels for Kids in USA**
+- **Objective**: This project aimed to compare four different streaming channels for children 14 years and below in the United States regarding cost efficiency, entertainment value, number of educational movies, and popularity.
+- **Responsibilities**:
+  - Analyzed subscription needs of parents with kids 14 years and below.
+  - Created tree maps to show the number of subscribers to each channel.
+  - Utilized various data visualization techniques to represent the data effectively, including bubble charts, horizontal bar charts, and stacked bar charts.
+  - Conducted data selection, analysis, and cleansing.
+  - Collaborated with team members to design infographics and present findings.
 ## 🏆 Certifications
 - Microsoft Azure Data Fundamentals
 - Excel Basics for Data Analysis (Coursera)
