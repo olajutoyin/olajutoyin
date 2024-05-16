@@ -7,7 +7,7 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 
 ## 🚀 About Me
 - 🎓 **Education**: 
-  - Master of Science in Data Science, Teesside University (Distinction)
+  - Master of Science in Data Science, Teesside University 
   - Bachelor of Science in Physics, Obafemi Awolowo University
   
 - 💼 **Professional Experience**:
