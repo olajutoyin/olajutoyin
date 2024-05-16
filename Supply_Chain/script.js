@@ -91,5 +91,73 @@ function buildAreaChart(dataSet) {
             .call(d3.axisBottom(xScale));
     // append y axis inside axesGroup
     yAxis = axesGroup.append('g')
-           
-
+            .attr('id', 'y-axis')
+            .call(d3.axisLeft(yScale))
+                .selectAll('text')
+                    .attr('class', 'tick-label');
+    const legendGroup = graphGroup
+                            .append('g')
+                            .attr('id', 'legend-group')
+                            .attr("transform", `translate(${width-paddingRight -100},${paddingTop})`);
+    y_grid = graphGroup.append('g')
+            .classed('grid', true)
+            .call(d3.axisLeft(yScale)
+            .tickSize(-graphWidth)
+            .tickFormat('')
+            .ticks())
+            .style('stroke-width', 0.5)
+            .style('opacity', 0.5)
+            .style('stroke-dasharray', ('3,3'));
+    //****PLOT THE DATA****
+    // create the area generator using d3 area function and map the x and y coordinates from the scales
+        area_path = d3.area()
+                     .x(function(d, i) { return xScale(dates[i]) }) //
+                     .y0(yScale(0))
+                    .y1(function(d){return yScale(d.Sales)})
+    // Append the line path inside the clipPath
+        brush_section
+            .selectAll('path')
+            .data([dataSet])
+            .enter()
+               .append("path")
+               .attr('class', 'area')
+               .style('fill', 'rgb(31, 119, 180)')
+               .attr('stroke-width', 2)
+               .style('opacity', 1)
+               .attr('d', area_path);
+    //call the brush 
+        brush_section.append('g')
+                    .attr('class', 'brush')
+                    .call(brush);
+    // set time out to reset if inactive and brush move when used
+        let idleTimeOut
+        function idle(){idleTimeOut = null;}
+        function updateChart(event) {
+                    extent = event.selection
+                    if (!extent) {
+                        if (!idleTimeOut)
+                            return idleTimeOut = setTimeout(idle, 300);
+                            xScale.domain([4,8])
+                    }else{
+                        xScale.domain([ xScale.invert(extent[0]), xScale.invert(extent[1]) ])
+                        brush_section.select(".brush").call(brush.move, null)
+                    }
+    // Update the x axis on brush action
+                    xAxis.transition().duration(3000).call(d3.axisBottom(xScale))
+    // Updath Path on brush action with some animation
+            brush_section
+              .select('.area')
+              .transition()
+              .duration(3000)
+              .attr("d", area_path)
+        }
+    // Reset chart on double click
+        svg.on('dblclick', function(){
+            xScale.domain(d3.extent(dates))
+            xAxis.transition().call(d3.axisBottom(xScale))
+            brush_section.select('.area')
+                .transition()
+                .duration(500)
+                .attr('d', area_path)
+        });
+}
