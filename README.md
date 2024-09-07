@@ -4,7 +4,6 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=olajutoyin&show_icons=true)
 
-
 ## 🚀 About Me
 - 🎓 **Education**: 
   - Master of Science in Data Science, Teesside University 
@@ -23,20 +22,21 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 - **Programming Languages**: Python, SQL, R, HTML/CSS, JavaScript
 - **Data Analysis**: Statistical Analysis, Data Visualization, Machine Learning, Data Modeling
 - **Tools & Technologies**: Power BI, Microsoft Azure, PyTorch, VS Code, Scanpy
+- **Big Data Frameworks**: Hadoop, Spark (optional but beneficial)
+- **Additional Skills**:
+  - AWS SageMaker
+  - Econometrics
+  - Jupyter
+  - MLOps
+  - MetaBase
 - **Other Skills**: Project Management, Technical Training, Process Improvement, Communication
 
 ## 📊 Projects
 - **Spatial Transcriptomics and Machine Learning Analysis**: Analyzed cellular interactions within breast cancer tissues using deep learning and clustering algorithms.
 - **Interactive Supply Chain Visualization Tool**: Developed a tool to enhance decision-making by analyzing supply chain data.
 - **Heart Disease Prediction**: Utilized machine learning models to predict heart disease, achieving high accuracy with Random Forest and SVM models.
-- **Analysis of Subscription Channels for Kids in USA**
-- **Objective**: This project aimed to compare four different streaming channels for children 14 years and below in the United States regarding cost efficiency, entertainment value, number of educational movies, and popularity.
-- **Responsibilities**:
-  - Analyzed subscription needs of parents with kids 14 years and below.
-  - Created tree maps to show the number of subscribers to each channel.
-  - Utilized various data visualization techniques to represent the data effectively, including bubble charts, horizontal bar charts, and stacked bar charts.
-  - Conducted data selection, analysis, and cleansing.
-  - Collaborated with team members to design infographics and present findings.
+- **Analysis of Subscription Channels for Kids in USA**: Compared streaming channels for children in terms of cost efficiency and entertainment value.
+
 ## 🏆 Certifications
 - Microsoft Azure Data Fundamentals
 - Excel Basics for Data Analysis (Coursera)
@@ -47,8 +47,6 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=olajutoyin&show_icons=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=olajutoyin&layout=compact)
 
-
-
 ## 🌐 Connect with Me
 - [LinkedIn](https://www.linkedin.com/in/toyin-verity-egho-b9a143b)
 - [Email](mailto:olajutoyin@gmail.com)
@@ -56,9 +54,3 @@ Welcome to my GitHub profile! I am a Data Scientist with a strong foundation in 
 ## 📚 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
-
-<!-- Optional: If you have a blog or medium account, you can integrate your latest posts -->
-<!-- Example: 
-- [Understanding Machine Learning Models](https://medium.com/@yourusername/understanding-machine-learning-models)
-- [Data Visualization Best Practices](https://medium.com/@yourusername/data-visualization-best-practices)
--->
